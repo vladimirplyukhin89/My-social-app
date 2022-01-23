@@ -6,7 +6,7 @@ const Navbar = () => {
 
     // для выбранной ссылки
     const selectedLink = () => {
-        return selected => selected.isActive ? classes.active : classes.item;
+        return selected => selected.isActive ? classes.activeLink : classes.item;
     }
 
     return (
