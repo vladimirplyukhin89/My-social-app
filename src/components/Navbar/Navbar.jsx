@@ -6,11 +6,7 @@ const Navbar = () => {
 
     // для выбранной ссылки
     const selectedLink = () => {
-<<<<<<< HEAD
-        return selected => selected.isActive ? classes.active : classes.item;
-=======
         return selected => selected.isActive ? classes.activeLink : classes.item;
->>>>>>> dialogs
     }
 
     return (
