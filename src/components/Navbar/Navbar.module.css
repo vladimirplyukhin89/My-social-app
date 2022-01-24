@@ -9,7 +9,11 @@
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 .active {
+=======
+.activeLink {
+>>>>>>> dialogs
   color: gold;
   text-decoration: none;
 }
