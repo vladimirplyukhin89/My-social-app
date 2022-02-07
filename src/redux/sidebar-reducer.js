@@ -1,4 +1,17 @@
-const sidebarReducer = (state, action) => {
+let initialState = {
+    friends: [
+        {},
+        {},
+        {}
+    ],
+    images: [
+        {},
+        {},
+        {}
+    ]
+};
+
+const sidebarReducer = (state = initialState, action) => {
 
     return state;
 }
