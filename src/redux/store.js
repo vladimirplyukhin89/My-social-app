@@ -48,6 +48,7 @@ let store = {
             ]
         }
     },
+
     _callSubscriber() {
         console.log('State changed');
     },
@@ -67,9 +68,9 @@ let store = {
         this._state.profilePage.posts.push(newPost);
         this._callSubscriber(this._state);
     },
-    updateNewPost(newText) {
+    updateNewPost(text) {
 
-        this._state.profilePage.newPostText = newText;
+        this._state.profilePage.newPostText = text;
         this._callSubscriber(this._state);
     },
 
