@@ -21,5 +21,4 @@ let mapDispatchToProps = (dispatch) => {
 
 // Вызываем контейнерную компоненту для Dialogs
 const DialogsContainer = connect(mapStateToProps, mapDispatchToProps)(Dialogs);
-
 export default DialogsContainer;
