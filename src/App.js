@@ -4,9 +4,10 @@ import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
 import { Route, Routes } from 'react-router-dom';
 import DialogsContainer from './components/Dialogs/DialogsContainer';
+import Users from './components/users/Users';
 
 const App = (props) => {
-  //debugger
+  debugger
   return (
 
     <div className='app-wrapper'>
@@ -19,6 +20,9 @@ const App = (props) => {
           />} />
           <Route path='/profile' element={<Profile
             store={props.store}
+          />} />
+          <Route path='/users' element={<Users
+          //store={props.store}
           />} />
           {/*<Route path='/news' element={<News />} />
             <Route path='/music' element={<Music />} />
