@@ -2,12 +2,12 @@ import './App.css';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import DialogsContainer from './components/Dialogs/DialogsContainer';
-import Users from './components/users/Users';
+import UsersContainer from './components/Users/UsersContainer';
 
 const App = (props) => {
-  debugger
   return (
 
     <div className='app-wrapper'>
@@ -21,8 +21,8 @@ const App = (props) => {
           <Route path='/profile' element={<Profile
             store={props.store}
           />} />
-          <Route path='/users' element={<Users
-          //store={props.store}
+          <Route path='/users' element={<UsersContainer
+            store={props.store}
           />} />
           {/*<Route path='/news' element={<News />} />
             <Route path='/music' element={<Music />} />
